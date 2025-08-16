@@ -267,5 +267,6 @@ Inspired by the sharing economy and peer-to-peer learning principles
 
 <div align="center">
 Built with ❤️ by Arunim Parashar
-🌐 Live Demo • 📧 Contact • 🐛 Report Bug
+🌐 Live Demo at https://skillswap-gold.vercel.app • 📧 Contact • 🐛 Report Bug
 </div>
+
