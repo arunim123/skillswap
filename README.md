@@ -16,7 +16,7 @@
 ### Dashboard Overview
 <img width="1275" height="913" alt="Main Dashboard" src="https://github.com/user-attachments/assets/d9a1d70c-8002-4f8b-bd74-fc174dbb0bde" />
 
-### Skill Discovery
+### Skill Discovery  
 <img width="1861" height="909" alt="Skill Browse Page" src="https://github.com/user-attachments/assets/a9de8c96-18ab-4257-afea-1aa1ff8e78f9" />
 
 ### User Profile
@@ -36,25 +36,25 @@
 ---
 
 ## 📂 Project Structure
-skillswap/
-├── 🗃️ backend/
-│   ├── config/          # Database and environment configuration
-│   ├── middleware/      # Express middleware (auth, validation, etc.)
-│   ├── models/          # Sequelize ORM models
-│   ├── routes/          # RESTful API endpoints
-│   ├── package.json     # Backend dependencies
-│   └── server.js        # Express server entry point
-│
-├── 🎨 frontend/
-│   ├── src/
-│   │   ├── components/  # Reusable React components
-│   │   ├── services/    # API integration services
-│   │   ├── store/       # Redux state management
-│   │   └── ...
-│   └── package.json     # Frontend dependencies
-│
-├── package.json         # Root workspace configuration
-└── README.md           # This file
+
+**📁 Backend (`backend/`)**
+- `config/` → Database and environment configuration
+- `middleware/` → Express middleware (auth, validation, etc.)
+- `models/` → Sequelize ORM models  
+- `routes/` → RESTful API endpoints
+- `package.json` → Backend dependencies
+- `server.js` → Express server entry point
+
+**📁 Frontend (`frontend/`)**
+- `src/` → Source code directory
+  - `components/` → Reusable React components
+  - `services/` → API integration services
+  - `store/` → Redux state management
+- `package.json` → Frontend dependencies
+
+**📁 Root**
+- `package.json` → Root workspace configuration
+- `README.md` → Project documentation
 
 ---
 
@@ -68,16 +68,17 @@ skillswap/
 ### 1️⃣ Clone & Install
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/skillswap-platform.git
-cd skillswap-platform
+git clone https://github.com/arunim123/skillswap.git
+cd skillswap
 
 # Install all dependencies (backend + frontend)
 npm run install:all
-2️⃣ Environment Setup
-Create a .env file in the backend/ directory:
-env# Server Configuration
-PORT=5000
-NODE_ENV=development
+```
+###2️⃣ Environment Setup
+ Create a .env file in the backend/ directory:
+ ```env# Server Configuration
+ PORT=5000
+ NODE_ENV=development
 
 # Database Configuration
 DB_HOST=localhost
@@ -94,8 +95,9 @@ EMAIL_HOST=smtp.gmail.com
 EMAIL_PORT=587
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password
+```
 3️⃣ Database Setup
-bash# Navigate to backend directory
+```bash# Navigate to backend directory
 cd backend
 
 # Run database migrations
@@ -103,13 +105,15 @@ npx sequelize-cli db:migrate
 
 # Seed initial data (optional)
 npx sequelize-cli db:seed:all
+```
 4️⃣ Start Development Servers
-bash# Start both frontend and backend concurrently
+```bash# Start both frontend and backend concurrently
 npm run dev
 
 # Or start individually:
 npm run dev:backend    # Backend only (port 5000)
 npm run dev:frontend   # Frontend only (port 3000)
+```
 🎉 Success! Your platform should be running at:
 
 Frontend: http://localhost:3000
@@ -151,11 +155,11 @@ POST   /api/auth/refresh           # Refresh JWT token
 POST   /api/auth/logout            # User logout
 POST   /api/auth/forgot-password   # Password reset request
 👥 User Management
-httpGET    /api/users                  # Get all users (paginated)
-GET    /api/users/:id              # Get specific user profile
-PUT    /api/users/:id              # Update user profile
-DELETE /api/users/:id              # Delete user account
-GET    /api/users/:id/skills       # Get user's skills
+ httpGET    /api/users                  # Get all users (paginated)
+ GET    /api/users/:id              # Get specific user profile
+ PUT    /api/users/:id              # Update user profile
+ DELETE /api/users/:id              # Delete user account
+ GET    /api/users/:id/skills       # Get user's skills
 🛠️ Skills Management
 httpGET    /api/skills                 # Get all skills (with filters)
 POST   /api/skills                 # Create new skill
@@ -246,7 +250,6 @@ Inspired by the sharing economy and peer-to-peer learning principles
 
 
 <div align="center">
-Built with ❤️ by the Arunim Parashar
-🌐 Live Demo • 📧 Contact Us • 🐛 Report Bug
-</div>
-```
+Built with ❤️ by Arunim Parashar
+🌐 Live Demo • 📧 Contact • 🐛 Report Bug
+</div>'''
