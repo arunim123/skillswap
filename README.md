@@ -1,4 +1,4 @@
-/*
+
 
 SkillSwap Platform
 
@@ -106,5 +106,5 @@ Others: WebSockets, JWT Auth, Docker (for deployment)
 
 License
 
-This project is licensed under the MIT License. */
+This project is licensed under the MIT License. 
 
